@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Carousel msg="Welcome to Your Vue.js App"/>
+    <Carousel/>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 #app {
   font-family: 'Noto Sans', Arial, sans-serif;
 }
-#app div {
+div {
   border: solid 1px;
   border-radius: 10px;
   margin: 2%;
