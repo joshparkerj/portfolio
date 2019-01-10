@@ -1,7 +1,7 @@
 <template>
   <div class="outer-carousel">
     <div class="carousel">
-      <h1>CAROUSEL</h1>
+      <!-- no title here --> 
       <CarouselItem
         v-for="item in items"
         :key="item.id"
@@ -53,7 +53,6 @@ export default {
 /* all code to make the carousel work is borrowed from:
     https://codepen.io/joshhunt/pen/LVQZRa */
 .carousel {
-  background-color: chartreuse;
   transition: 450ms transform;
   font-size: 0;
   white-space: nowrap;

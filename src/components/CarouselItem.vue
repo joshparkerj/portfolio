@@ -89,13 +89,10 @@ export default {
   opacity: 1;
 }
 .item__title {
+  color: white;
   position: absolute;
-  bottom: 0;
+  top: 0;
   padding: 10px;
-}
-.item__title,
-.item__details {
-  border: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel-item:hover ~ .carousel-item {
