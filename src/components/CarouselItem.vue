@@ -89,9 +89,12 @@ export default {
   opacity: 1;
 }
 .item__title {
+  text-align: center;
+  width: 88%;
   color: white;
   position: absolute;
   top: 0;
+  left: 0;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="outer-carousel">
     <div class="carousel">
-      <!-- no title here --> 
+      <!-- no title here -->
       <CarouselItem
         v-for="item in items"
         :key="item.id"
@@ -42,6 +42,26 @@ export default {
           id: 3,
           title: "fourth item",
           img_src: "/img/fff.jpg"
+        },
+        {
+          id: 4,
+          title: "labels",
+          img_src: "/img/ca.jpg"
+        },
+        {
+          id: 5,
+          title: "title?",
+          img_src: "/img/iii.png"
+        },
+        {
+          id: 6,
+          title: "some kinda grid for the homework",
+          img_src: "/img/g.png"
+        },
+        {
+          id: 7,
+          title: "idk",
+          img_src: "/img/i25.jpg"
         }
       ]
     };
@@ -71,6 +91,6 @@ export default {
 }
 .outer-carousel {
   overflow: scroll;
-  width: 100%;
+  width: 98%;
 }
 </style>
