@@ -2,16 +2,19 @@
   <div id="app">
     <h1>CAROUSEL</h1>
     <Carousel/>
+    <Hello/>
   </div>
 </template>
 
 <script>
 import Carousel from "./components/Carousel.vue";
+import Hello from "./components/Hello.vue";
 
 export default {
   name: "app",
   components: {
-    Carousel
+    Carousel,
+    Hello
   }
 };
 </script>
