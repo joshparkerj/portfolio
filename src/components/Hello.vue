@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
-    <button :click="getFullName">get full name</button>
+    <button @click="getFullName">get full name</button>
     {{name}}
     <p>
-      <button :click="getFullLocation">get full location</button>
+      <button @click="getFullLocation">get full location</button>
       {{city}}
     </p>
   </div>
@@ -29,9 +29,11 @@ export default {
   },
   methods: {
     getFullName() {
+      console.log('get full name method called');
       store.commit("addLastName");
     },
     getFullLocation(){
+      console.log('get full name method called');
       store.commit("addState");
     }
   }
