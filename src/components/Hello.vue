@@ -1,11 +1,21 @@
 <template>
   <div class="hello">
-    <button @click="getFullName">get full name</button>
-    {{name}}
+    <p>
+      <button @click="getFullName">get full name</button>
+      {{name}}
+    </p>
     <p>
       <button @click="getFullLocation">get full location</button>
       {{city}}
     </p>
+    <p>
+      <button @click="onButtonClick">click me</button>
+    </p>
+    <p>
+      <button @click="getStarWars">See a random character from
+        the famous 1977 blockbuster star wars</button>
+        {{starchar}}
+      </p>
   </div>
 </template>
 
@@ -23,22 +33,36 @@ export default {
     name() {
       return store.getters.name;
     },
-    city(){
+    city() {
       return store.getters.city;
+    },
+    starchar(){
+      return store.getters.charName;
     }
   },
   methods: {
     getFullName() {
-      console.log('get full name method called');
       store.commit("addLastName");
     },
-    getFullLocation(){
-      console.log('get full name method called');
+    getFullLocation() {
       store.commit("addState");
+    },
+    onButtonClick() {
+      store.dispatch("changes",{ name: "Goober", city: "Robego" });
+    },
+    getStarWars(){
+      store.dispatch("starwars",{rand: Math.random()});
     }
   }
 };
 </script>
 
 <style>
+.hello {
+  display: grid;
+  grid-template-columns: 4fr 5fr 4fr;
+}
+.hello p {
+  grid-column: span 1;
+}
 </style>
